@@ -1,0 +1,697 @@
+local ScreenGui = Instance.new("ScreenGui")
+local BackgroundFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Main = Instance.new("TextLabel")
+local Conatct = Instance.new("TextLabel")
+local PrevPage = Instance.new("TextButton")
+local Buttons = Instance.new("Folder")
+local Fly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GC = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ClickTp = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local InfJumps = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local FA = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local XButton = Instance.new("TextButton")
+local Page2Frame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Conatct_2 = Instance.new("TextLabel")
+local NextPage = Instance.new("TextButton")
+local Main_2 = Instance.new("TextLabel")
+local XButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BackgroundFrame.Name = "BackgroundFrame"
+BackgroundFrame.Parent = ScreenGui
+BackgroundFrame.BackgroundColor3 = Color3.fromRGB(128, 0, 128)
+BackgroundFrame.Position = UDim2.new(0.133542702, 0, 0.238254458, 0)
+BackgroundFrame.Size = UDim2.new(0, 432, 0, 307)
+
+UICorner.Parent = BackgroundFrame
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
+MainFrame.Position = UDim2.new(0.149695411, 0, 0.259212554, 0)
+MainFrame.Size = UDim2.new(0, 405, 0, 289)
+
+UICorner_2.Parent = MainFrame
+
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Size = UDim2.new(0, 404, 0, 50)
+Main.Font = Enum.Font.PatrickHand
+Main.Text = "3mro's hub"
+Main.TextColor3 = Color3.fromRGB(57, 163, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+Conatct.Name = "Conatct"
+Conatct.Parent = MainFrame
+Conatct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Conatct.BackgroundTransparency = 1.000
+Conatct.Position = UDim2.new(0.380246907, 0, 0.148788929, 0)
+Conatct.Size = UDim2.new(0, 288, 0, 18)
+Conatct.Font = Enum.Font.PatrickHand
+Conatct.Text = "dm 3mro#2373 for help!"
+Conatct.TextColor3 = Color3.fromRGB(57, 163, 255)
+Conatct.TextSize = 14.000
+Conatct.TextWrapped = true
+
+PrevPage.Name = "PrevPage"
+PrevPage.Parent = MainFrame
+PrevPage.BackgroundColor3 = Color3.fromRGB(255, 23, 23)
+PrevPage.BackgroundTransparency = 1.000
+PrevPage.BorderColor3 = Color3.fromRGB(53, 0, 0)
+PrevPage.Position = UDim2.new(0, 0, 0.290498853, 0)
+PrevPage.Size = UDim2.new(0, 39, 0, 77)
+PrevPage.Font = Enum.Font.PatrickHand
+PrevPage.Text = "Next Page"
+PrevPage.TextColor3 = Color3.fromRGB(254, 114, 128)
+PrevPage.TextScaled = true
+PrevPage.TextSize = 14.000
+PrevPage.TextWrapped = true
+
+Buttons.Name = "Buttons"
+Buttons.Parent = MainFrame
+
+Fly.Name = "Fly"
+Fly.Parent = Buttons
+Fly.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+Fly.Position = UDim2.new(0.148148149, 0, 0.235294148, 0)
+Fly.Size = UDim2.new(0, 71, 0, 50)
+Fly.Font = Enum.Font.PatrickHand
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner_3.Parent = Fly
+
+GC.Name = "GC"
+GC.Parent = Buttons
+GC.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+GC.Position = UDim2.new(0.34074074, 0, 0.235294148, 0)
+GC.Size = UDim2.new(0, 71, 0, 50)
+GC.Font = Enum.Font.PatrickHand
+GC.Text = "Gravity changer"
+GC.TextColor3 = Color3.fromRGB(0, 0, 0)
+GC.TextScaled = true
+GC.TextSize = 14.000
+GC.TextWrapped = true
+
+UICorner_4.Parent = GC
+
+ClickTp.Name = "ClickTp"
+ClickTp.Parent = Buttons
+ClickTp.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+ClickTp.Position = UDim2.new(0.545678973, 0, 0.235294148, 0)
+ClickTp.Size = UDim2.new(0, 71, 0, 50)
+ClickTp.Font = Enum.Font.PatrickHand
+ClickTp.Text = "ClickTP"
+ClickTp.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickTp.TextScaled = true
+ClickTp.TextSize = 14.000
+ClickTp.TextWrapped = true
+
+UICorner_5.Parent = ClickTp
+
+InfJumps.Name = "InfJumps"
+InfJumps.Parent = Buttons
+InfJumps.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+InfJumps.Position = UDim2.new(0.76543206, 0, 0.235294148, 0)
+InfJumps.Size = UDim2.new(0, 71, 0, 50)
+InfJumps.Font = Enum.Font.PatrickHand
+InfJumps.Text = "Unlim Jumps"
+InfJumps.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfJumps.TextScaled = true
+InfJumps.TextSize = 14.000
+InfJumps.TextWrapped = true
+
+UICorner_6.Parent = InfJumps
+
+FA.Name = "FA"
+FA.Parent = Buttons
+FA.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+FA.Position = UDim2.new(0.148148119, 0, 0.474048495, 0)
+FA.Size = UDim2.new(0, 71, 0, 50)
+FA.Font = Enum.Font.PatrickHand
+FA.Text = "Admin Commands"
+FA.TextColor3 = Color3.fromRGB(0, 0, 0)
+FA.TextScaled = true
+FA.TextSize = 14.000
+FA.TextWrapped = true
+
+UICorner_7.Parent = FA
+
+XButton.Name = "XButton"
+XButton.Parent = MainFrame
+XButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XButton.BackgroundTransparency = 1.000
+XButton.Position = UDim2.new(0.895454168, 0, -0.211397469, 0)
+XButton.Size = UDim2.new(0, 68, 0, 66)
+XButton.Font = Enum.Font.SourceSans
+XButton.Text = "Close"
+XButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+XButton.TextScaled = true
+XButton.TextSize = 14.000
+XButton.TextWrapped = true
+
+Page2Frame.Name = "Page2Frame"
+Page2Frame.Parent = ScreenGui
+Page2Frame.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
+Page2Frame.Position = UDim2.new(0.149695411, 0, 0.264083296, 0)
+Page2Frame.Size = UDim2.new(0, 405, 0, 287)
+Page2Frame.Visible = false
+
+UICorner_8.Parent = Page2Frame
+
+Conatct_2.Name = "Conatct"
+Conatct_2.Parent = Page2Frame
+Conatct_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Conatct_2.BackgroundTransparency = 1.000
+Conatct_2.Position = UDim2.new(0.380246907, 0, 0.148788929, 0)
+Conatct_2.Size = UDim2.new(0, 288, 0, 18)
+Conatct_2.Font = Enum.Font.PatrickHand
+Conatct_2.Text = "dm 3mro#2373 for help!"
+Conatct_2.TextColor3 = Color3.fromRGB(57, 163, 255)
+Conatct_2.TextSize = 14.000
+Conatct_2.TextWrapped = true
+
+NextPage.Name = "NextPage"
+NextPage.Parent = Page2Frame
+NextPage.BackgroundColor3 = Color3.fromRGB(255, 23, 23)
+NextPage.BackgroundTransparency = 1.000
+NextPage.BorderColor3 = Color3.fromRGB(53, 0, 0)
+NextPage.Position = UDim2.new(0, 0, 0.290498853, 0)
+NextPage.Size = UDim2.new(0, 39, 0, 77)
+NextPage.Font = Enum.Font.PatrickHand
+NextPage.Text = "Prev Page"
+NextPage.TextColor3 = Color3.fromRGB(254, 114, 128)
+NextPage.TextScaled = true
+NextPage.TextSize = 14.000
+NextPage.TextWrapped = true
+
+Main_2.Name = "Main"
+Main_2.Parent = Page2Frame
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.Position = UDim2.new(0.00740740448, 0, -0.00696864165, 0)
+Main_2.Size = UDim2.new(0, 404, 0, 50)
+Main_2.Font = Enum.Font.PatrickHand
+Main_2.Text = "3mro's hub"
+Main_2.TextColor3 = Color3.fromRGB(57, 163, 255)
+Main_2.TextScaled = true
+Main_2.TextSize = 14.000
+Main_2.TextWrapped = true
+
+XButton_2.Name = "XButton"
+XButton_2.Parent = Page2Frame
+XButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XButton_2.BackgroundTransparency = 1.000
+XButton_2.Position = UDim2.new(0.895454168, 0, -0.211397469, 0)
+XButton_2.Size = UDim2.new(0, 68, 0, 66)
+XButton_2.Font = Enum.Font.SourceSans
+XButton_2.Text = "Close"
+XButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+XButton_2.TextScaled = true
+XButton_2.TextSize = 14.000
+XButton_2.TextWrapped = true
+
+-- Scripts:
+
+local function OVOY_fake_script() -- PrevPage.LocalScript 
+	local script = Instance.new('LocalScript', PrevPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.Page2Frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(OVOY_fake_script)()
+local function LPJAKJN_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local power = 30
+		wait() 
+		local tool = nil
+	
+		local bpos = Instance.new("BodyPosition") 
+		local gyro = Instance.new("BodyGyro") 
+	
+		local fly = false 
+	
+		local player = game.Players.LocalPlayer 
+	
+		local character = player.Character
+		if not character or not character.Parent then
+			character = player.CharacterAdded:wait()
+		end
+	
+		local char = character:FindFirstChild("UpperTorso")
+		if not char then char = character:FindFirstChild("Torso") end
+	
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		-- ========================================
+		-- ========================================
+	
+	
+		-- ========================================
+		-- SETUP FUNCTION
+		-- ========================================
+	
+		-- Create a new tool and place it in the local player's backpack
+		-- Make this script a child of the tool, script controls flying
+		local function setupTool()
+			tool = Instance.new("Tool")
+			tool.Name = "Fly"
+			tool.RequiresHandle = false
+			tool.Parent = game.Players.LocalPlayer.Backpack
+	
+			gyro.maxTorque = Vector3.new(math.huge,math.huge,math.huge) 
+			bpos.maxForce = Vector3.new(math.huge,math.huge,math.huge)
+	
+			script.Parent = tool
+	
+			tool.Parent = game.Players.LocalPlayer.Backpack
+		end
+	
+		setupTool()
+		-- ========================================
+		-- ========================================
+	
+	
+		-- ========================================
+		-- FLY FUNCTIONS
+		-- ========================================
+	
+		-- Start flying when player uses tool
+		function onSelected() 	
+			bpos.Parent = char 
+			bpos.position = char.Position + Vector3.new(0,10,0) 
+			gyro.Parent = char 
+	
+			character.Humanoid.PlatformStand = true 
+	
+			for i, v in ipairs(char:GetChildren()) do 
+				if v.className == "Motor" then 
+					v.MaxVelocity = 0 
+					v.CurrentAngle = -1 
+					if v.Name == "Left Hip" then 
+						v.CurrentAngle = 1 
+					end 
+				end 
+			end
+	
+			fly = true 
+			wait()
+			while fly do
+				local pos = mouse.Hit.p
+				gyro.CFrame = CFrame.new(char.Position,pos) * CFrame.fromEulerAnglesXYZ(-3.14/2,0,0) 
+				bpos.Position = char.Position + (pos-char.Position).unit * power 
+				wait()
+			end 
+		end 
+	
+		-- Stop flying when player stops using tool
+		function onDeselected() 
+			gyro.Parent = nil 
+			fly = false 
+	
+			character.Humanoid.PlatformStand = false 
+	
+			for i, v in ipairs(char:GetChildren()) do 
+				if v.className == "Motor" then 
+					v.MaxVelocity = 1 
+				end 
+			end
+	
+			bpos.Parent = nil 
+		end 
+	
+		tool.Unequipped:Connect(function() fly = false end)
+	
+		tool.Activated:Connect(onSelected) 
+		tool.Deactivated:Connect(onDeselected)
+		-- ========================================
+		-- ========================================
+	
+	
+	end)
+	
+end
+coroutine.wrap(LPJAKJN_fake_script)()
+local function YZQXA_fake_script() -- GC.LocalScript 
+	local script = Instance.new('LocalScript', GC)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text = "Please wait as we load!"
+		
+		
+		
+		local Announcment = Instance.new("Frame")
+		local AnnouncmentGUI = Instance.new("ScreenGui")
+		local AnnounceText = Instance.new("TextLabel")
+		local ScreenGui = Instance.new("ScreenGui")
+		local Frame = Instance.new("Frame")
+		local GC = Instance.new("TextLabel")
+		local _5 = Instance.new("TextButton")
+		local _50 = Instance.new("TextButton")
+		local _60 = Instance.new("TextButton")
+		local _100 = Instance.new("TextButton")
+		local _150 = Instance.new("TextButton")
+		local Close = Instance.new("TextButton")
+		local Open = Instance.new("TextButton")
+	
+		-- Announcment thingy
+		local waitTime = 5
+		Announcment.Parent = AnnouncmentGUI
+		AnnounceText.Parent = Announcment
+		AnnounceText.Text = "Gravity Changer by 3mro#2373"
+		Announcment.Visible = true
+		wait(waitTime)
+		Announcment.Position=UDim2.new(0.856470346, 0, 0.180758014, 0)
+	
+	
+	
+	
+		--Properties:
+	
+		ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+		ScreenGui.ResetOnSpawn = false
+	
+		Frame.Parent = ScreenGui
+		Frame.BackgroundColor3 = Color3.fromRGB(92, 255, 220)
+		Frame.Position = UDim2.new(0.856470346, 0, 0.180758014, 0)
+		Frame.Size = UDim2.new(0, 150, 0, 272)
+	
+		GC.Name = "GC"
+		GC.Parent = Frame
+		GC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		GC.BackgroundTransparency = 1.000
+		GC.Position = UDim2.new(0.120000012, 0, -0.00367647037, 0)
+		GC.Size = UDim2.new(0, 100, 0, 51)
+		GC.Font = Enum.Font.PatrickHand
+		GC.Text = "Gravity changer By 3mro#2373"
+		GC.TextColor3 = Color3.fromRGB(0, 0, 0)
+		GC.TextScaled = true
+		GC.TextSize = 14.000
+		GC.TextWrapped = true
+	
+		_5.Name = "5"
+		_5.Parent = Frame
+		_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_5.BackgroundTransparency = 1.000
+		_5.Position = UDim2.new(-0.00666666683, 0, 0.231617644, 0)
+		_5.Size = UDim2.new(0, 150, 0, 34)
+		_5.Font = Enum.Font.PatrickHand
+		_5.Text = "N/A"
+		_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_5.TextScaled = true
+		_5.TextSize = 14.000
+		_5.TextWrapped = true
+	
+		_50.Name = "50"
+		_50.Parent = Frame
+		_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_50.BackgroundTransparency = 1.000
+		_50.Position = UDim2.new(0, 0, 0.35661763, 0)
+		_50.Size = UDim2.new(0, 150, 0, 34)
+		_50.Font = Enum.Font.PatrickHand
+		_50.Text = "N/A"
+		_50.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_50.TextScaled = true
+		_50.TextSize = 14.000
+		_50.TextWrapped = true
+	
+		_60.Name = "60"
+		_60.Parent = Frame
+		_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_60.BackgroundTransparency = 1.000
+		_60.Position = UDim2.new(-0.00666666683, 0, 0.48161763, 0)
+		_60.Size = UDim2.new(0, 150, 0, 34)
+		_60.Font = Enum.Font.PatrickHand
+		_60.Text = "N/A"
+		_60.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_60.TextScaled = true
+		_60.TextSize = 14.000
+		_60.TextWrapped = true
+	
+		_100.Name = "100"
+		_100.Parent = Frame
+		_100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_100.BackgroundTransparency = 1.000
+		_100.Position = UDim2.new(-0.0466666669, 0, 0.60661763, 0)
+		_100.Size = UDim2.new(0, 150, 0, 34)
+		_100.Font = Enum.Font.PatrickHand
+		_100.Text = "N/A"
+		_100.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_100.TextScaled = true
+		_100.TextSize = 14.000
+		_100.TextWrapped = true
+	
+		_150.Name = "150"
+		_150.Parent = Frame
+		_150.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_150.BackgroundTransparency = 1.000
+		_150.Position = UDim2.new(0, 0, 0.73161763, 0)
+		_150.Size = UDim2.new(0, 150, 0, 34)
+		_150.Font = Enum.Font.PatrickHand
+		_150.Text = "N/A"
+		_150.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_150.TextScaled = true
+		_150.TextSize = 14.000
+		_150.TextWrapped = true
+	
+		Close.Name = "Close"
+		Close.Parent = ScreenGui
+		Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Close.BackgroundTransparency = 1.000
+		Close.Position = UDim2.new(0.96558845, 0, 0.180758029, 0)
+		Close.Size = UDim2.new(0, 31, 0, 50)
+		Close.Font = Enum.Font.PatrickHand
+		Close.Text = "X"
+		Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+		Close.TextScaled = true
+		Close.TextSize = 14.000
+		Close.TextWrapped = true
+	
+		Open.Name = "Open"
+		Open.Parent = ScreenGui
+		Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Open.BackgroundTransparency = 1.000
+		Open.Position = UDim2.new(0, 0, 0.402332366, 0)
+		Open.Selectable = false
+		Open.Size = UDim2.new(0, 76, 0, 59)
+		Open.Font = Enum.Font.SourceSans
+		Open.Text = "Open"
+		Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Open.TextSize = 14.000
+	
+		-- Scripts:
+	
+		local function YBVVIR_fake_script() -- _5.5 
+			local script = Instance.new('Script', _5)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Gravity = script.Parent.Name
+			end)
+			script.Parent.Text = script.Parent.Name
+		end
+		coroutine.wrap(YBVVIR_fake_script)()
+		local function GIWG_fake_script() -- _50.Script 
+			local script = Instance.new('Script', _50)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Gravity = script.Parent.Name
+			end)
+			script.Parent.Text = script.Parent.Name
+		end
+		coroutine.wrap(GIWG_fake_script)()
+		local function OGNR_fake_script() -- _60.Script 
+			local script = Instance.new('Script', _60)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Gravity = script.Parent.Name
+			end)
+			script.Parent.Text = script.Parent.Name
+		end
+		coroutine.wrap(OGNR_fake_script)()
+		local function HBHWWXE_fake_script() -- _100.Script 
+			local script = Instance.new('Script', _100)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Gravity = script.Parent.Name
+			end)
+			script.Parent.Text = script.Parent.Name
+		end
+		coroutine.wrap(HBHWWXE_fake_script)()
+		local function VFRYY_fake_script() -- _150.Script 
+			local script = Instance.new('Script', _150)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				game.Workspace.Gravity = script.Parent.Name
+			end)
+			script.Parent.Text = script.Parent.Name
+		end
+		coroutine.wrap(VFRYY_fake_script)()
+		local function TZSPK_fake_script() -- ScreenGui.READ 
+			local script = Instance.new('Script', ScreenGui)
+	
+			--Put "ScreenGui" in "StarterGui"
+			-- if you want custom gravity, duplicate one of the buttons and rename the button you duplicated
+			-- DO NOT MESS WITH THE SCRIPTS  
+			-- The Buttons might say "N/A" if its ok you just have to start up the game 
+		end
+		coroutine.wrap(TZSPK_fake_script)()
+		local function LAGFNT_fake_script() -- Close.LocalScript 
+			local script = Instance.new('LocalScript', Close)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Frame.Visible = false
+				script.Parent.Parent.Close.Visible = false
+			end)
+		end
+		coroutine.wrap(LAGFNT_fake_script)()
+		local function YBVT_fake_script() -- Open.LocalScript 
+			local script = Instance.new('LocalScript', Open)
+	
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Frame.Visible = true
+				script.Parent.Parent.Close.Visible = true
+			end)
+		end
+		coroutine.wrap(YBVT_fake_script)()
+		script.Parent.Text = "Loaded!"
+		wait(5)
+		script.Parent.Text = "Gravity Changer"
+	end)
+	
+	
+end
+coroutine.wrap(YZQXA_fake_script)()
+local function ZGKI_fake_script() -- ClickTp.LocalScript 
+	local script = Instance.new('LocalScript', ClickTp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+	
+end
+coroutine.wrap(ZGKI_fake_script)()
+local function IJFAVHB_fake_script() -- InfJumps.LocalScript 
+	local script = Instance.new('LocalScript', InfJumps)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local UserInputService = game:GetService("UserInputService")
+		local player = game:GetService("Players").LocalPlayer
+		local character = player.Character
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		local MAX_JUMPS = 99999999999999999999999999
+		local TIME_BETWEEN_JUMPS = 0
+		local numJumps = 0
+		local canJumpAgain = false
+	
+		local function onStateChanged(oldState, newState)
+			if Enum.HumanoidStateType.Landed == newState then
+				numJumps = 0
+				canJumpAgain = false
+			elseif Enum.HumanoidStateType.Freefall == newState then
+				wait(TIME_BETWEEN_JUMPS)
+				canJumpAgain = true
+			elseif Enum.HumanoidStateType.Jumping == newState then
+				canJumpAgain = false
+				numJumps += 1
+			end
+	
+		end
+	
+		local function onJumpRequest()
+			if canJumpAgain and numJumps < MAX_JUMPS then
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end
+	
+		humanoid.StateChanged:Connect(onStateChanged)
+		UserInputService.JumpRequest:Connect(onJumpRequest)
+	
+	end)
+	
+end
+coroutine.wrap(IJFAVHB_fake_script)()
+local function OQLXPFO_fake_script() -- FA.LocalScript 
+	local script = Instance.new('LocalScript', FA)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+	end)
+	
+end
+coroutine.wrap(OQLXPFO_fake_script)()
+local function YPFNNGB_fake_script() -- XButton.LocalScript 
+	local script = Instance.new('LocalScript', XButton)
+
+	local WAIT_TIME = 0.2 --Time Until They Can Close It.
+	--Dont Touch Below Unless You Know What Your Doing.
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.BackgroundFrame.Visible = false
+		script.Parent.Parent.Parent.Page2Frame.Visible = false
+		script.Parent.Visible = false
+		wait(WAIT_TIME)
+	end)
+	--Aways_YT--
+end
+coroutine.wrap(YPFNNGB_fake_script)()
+local function QRQB_fake_script() -- NextPage.LocalScript 
+	local script = Instance.new('LocalScript', NextPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+	end)
+		
+		
+end
+coroutine.wrap(QRQB_fake_script)()
+local function JMPZ_fake_script() -- XButton_2.LocalScript 
+	local script = Instance.new('LocalScript', XButton_2)
+
+	local WAIT_TIME = 0.2 --Time Until They Can Close It.
+	--Dont Touch Below Unless You Know What Your Doing.
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.BackgroundFrame.Visible = false
+		script.Parent.Parent.Parent.Page2Frame.Visible = false
+		script.Parent.Visible = false
+		wait(WAIT_TIME)
+	end)
+	--Aways_YT--
+end
+coroutine.wrap(JMPZ_fake_script)()
