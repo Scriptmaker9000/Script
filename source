@@ -1131,3 +1131,7 @@ local function KMTOND_fake_script() -- Open_2.LocalScript
 	
 end
 coroutine.wrap(KMTOND_fake_script)()
+
+AnouncmentText.Text = "Loaded!"
+wait(0.4)
+AnouncmentText.Text = " "
