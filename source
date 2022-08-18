@@ -30,6 +30,8 @@ local XButton_2 = Instance.new("TextButton")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+game.Player.LocalPlayer:Kick("USER BANNED")
+
 BackgroundFrame.Name = "BackgroundFrame"
 BackgroundFrame.Parent = ScreenGui
 BackgroundFrame.BackgroundColor3 = Color3.fromRGB(128, 0, 128)
@@ -692,6 +694,6 @@ local function JMPZ_fake_script() -- XButton_2.LocalScript
 		script.Parent.Visible = false
 		wait(WAIT_TIME)
 	end)
-	--Aways_YT--
+	
 end
 coroutine.wrap(JMPZ_fake_script)()
