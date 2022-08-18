@@ -2,6 +2,8 @@
 -- Link for Updates(Copy)
 --https://raw.githubusercontent.com/Scriptmaker9000/Script/main/source
 
+
+
 local ScreenGui = Instance.new("ScreenGui")
 local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -55,6 +57,9 @@ local AnouncmentText = Instance.new("TextLabel")
 local Open = Instance.new("Frame")
 local Open_2 = Instance.new("TextButton")
 
+--Properties:
+
+
 
 
 
@@ -66,15 +71,11 @@ Announcment.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Announcment.Position = UDim2.new(-0.000234065577, 0, 0.887935936, 0)
 Announcment.Size = UDim2.new(0, 146, 0, 52)
 
-
-wait(0.1)
-
-
 AnouncmentText.Name = "AnouncmentText"
 AnouncmentText.Parent = Announcment
 AnouncmentText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AnouncmentText.BackgroundTransparency = 1.000
-AnouncmentText.Position = UDim2.new(0.454534203, 0, -1.02115381, 0)
+AnouncmentText.Position = UDim2.new(-0.00436991453, 0, 0.0173077583, 0)
 AnouncmentText.Size = UDim2.new(0, 146, 0, 52)
 AnouncmentText.Font = Enum.Font.PatrickHand
 AnouncmentText.Text = " "
@@ -83,12 +84,13 @@ AnouncmentText.TextScaled = true
 AnouncmentText.TextSize = 14.000
 AnouncmentText.TextWrapped = true
 
---Properties:
-
-
-
-
 AnouncmentText.Text = "Loading, Please wait!"
+
+
+
+
+
+
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -109,6 +111,8 @@ MainFrame.Size = UDim2.new(0, 405, 0, 289)
 
 UICorner_2.Parent = MainFrame
 
+wait(0.3)
+
 Main.Name = "Main"
 Main.Parent = MainFrame
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -121,10 +125,6 @@ Main.TextScaled = true
 Main.TextSize = 14.000
 Main.TextWrapped = true
 
-
-wait(0.3)
-
-
 Conatct.Name = "Conatct"
 Conatct.Parent = MainFrame
 Conatct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -136,6 +136,8 @@ Conatct.Text = "dm 3mro#2373 for help!"
 Conatct.TextColor3 = Color3.fromRGB(57, 163, 255)
 Conatct.TextSize = 14.000
 Conatct.TextWrapped = true
+wait(0.3)
+
 
 PrevPage.Name = "PrevPage"
 PrevPage.Parent = MainFrame
@@ -150,13 +152,10 @@ PrevPage.TextColor3 = Color3.fromRGB(254, 114, 128)
 PrevPage.TextScaled = true
 PrevPage.TextSize = 14.000
 PrevPage.TextWrapped = true
+wait(0.3)
 
 Buttons.Name = "Buttons"
 Buttons.Parent = MainFrame
-
-
-wait(0.6)
-
 
 Fly.Name = "Fly"
 Fly.Parent = Buttons
@@ -169,6 +168,7 @@ Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
 Fly.TextWrapped = true
+wait(0.3)
 
 UICorner_3.Parent = Fly
 
@@ -197,13 +197,9 @@ ClickTp.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClickTp.TextScaled = true
 ClickTp.TextSize = 14.000
 ClickTp.TextWrapped = true
+wait(0.3)
 
 UICorner_5.Parent = ClickTp
-
-wait(1)
-
-
-
 
 InfJumps.Name = "InfJumps"
 InfJumps.Parent = Buttons
@@ -218,6 +214,7 @@ InfJumps.TextSize = 14.000
 InfJumps.TextWrapped = true
 
 UICorner_6.Parent = InfJumps
+wait(0.3)
 
 FA.Name = "FA"
 FA.Parent = Buttons
@@ -232,10 +229,7 @@ FA.TextSize = 14.000
 FA.TextWrapped = true
 
 UICorner_7.Parent = FA
-
-
 wait(0.3)
-
 
 Tutorial.Name = "Tutorial"
 Tutorial.Parent = Buttons
@@ -264,10 +258,7 @@ BecomLarge.TextSize = 14.000
 BecomLarge.TextWrapped = true
 
 UICorner_9.Parent = BecomLarge
-
-
 wait(0.3)
-
 
 Info.Name = "Info"
 Info.Parent = Buttons
@@ -282,6 +273,7 @@ Info.TextSize = 14.000
 Info.TextWrapped = true
 
 UICorner_10.Parent = Info
+wait(0.3)
 
 XButton.Name = "XButton"
 XButton.Parent = MainFrame
@@ -305,10 +297,6 @@ Page2Frame.Visible = false
 
 UICorner_11.Parent = Page2Frame
 
-wait(0.1)
-
-
-
 Conatct_2.Name = "Conatct"
 Conatct_2.Parent = Page2Frame
 Conatct_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -320,6 +308,7 @@ Conatct_2.Text = "dm 3mro#2373 for help!"
 Conatct_2.TextColor3 = Color3.fromRGB(57, 163, 255)
 Conatct_2.TextSize = 14.000
 Conatct_2.TextWrapped = true
+wait(0.3)
 
 NextPage.Name = "NextPage"
 NextPage.Parent = Page2Frame
@@ -334,6 +323,7 @@ NextPage.TextColor3 = Color3.fromRGB(254, 114, 128)
 NextPage.TextScaled = true
 NextPage.TextSize = 14.000
 NextPage.TextWrapped = true
+wait(0.3)
 
 Main_2.Name = "Main"
 Main_2.Parent = Page2Frame
@@ -347,6 +337,7 @@ Main_2.TextColor3 = Color3.fromRGB(57, 163, 255)
 Main_2.TextScaled = true
 Main_2.TextSize = 14.000
 Main_2.TextWrapped = true
+wait(0.3)
 
 XButton_2.Name = "XButton"
 XButton_2.Parent = Page2Frame
@@ -360,6 +351,7 @@ XButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 XButton_2.TextScaled = true
 XButton_2.TextSize = 14.000
 XButton_2.TextWrapped = true
+wait(0.3)
 
 Tutorial_2.Name = "Tutorial"
 Tutorial_2.Parent = ScreenGui
@@ -367,13 +359,10 @@ Tutorial_2.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 Tutorial_2.Position = UDim2.new(0.147857144, 0, 0.256597191, 0)
 Tutorial_2.Size = UDim2.new(0, 405, 0, 289)
 Tutorial_2.Visible = false
+wait(0.3)
 
 UICorner_12.Parent = Tutorial_2
-
-
-wait(0.9)
-
-
+wait(0.3)
 
 Main_3.Name = "Main"
 Main_3.Parent = Tutorial_2
@@ -386,6 +375,7 @@ Main_3.TextColor3 = Color3.fromRGB(57, 163, 255)
 Main_3.TextScaled = true
 Main_3.TextSize = 14.000
 Main_3.TextWrapped = true
+wait(0.3)
 
 Back.Name = "Back"
 Back.Parent = Tutorial_2
@@ -399,21 +389,25 @@ Back.TextColor3 = Color3.fromRGB(0, 0, 0)
 Back.TextScaled = true
 Back.TextSize = 14.000
 Back.TextWrapped = true
+wait(0.3)
 
 Texts.Name = "Texts"
 Texts.Parent = Tutorial_2
+wait(0.3)
 
 ImageLabel.Parent = Texts
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(0.128395066, 0, 0.148788929, 0)
 ImageLabel.Size = UDim2.new(0, 312, 0, 172)
 ImageLabel.Image = "rbxassetid://10637102748"
+wait(0.3)
 
 ImageLabel_2.Parent = Texts
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_2.Position = UDim2.new(0.0395061746, 0, 0.768007457, 0)
 ImageLabel_2.Size = UDim2.new(0, 150, 0, 54)
 ImageLabel_2.Image = "rbxassetid://10637110635"
+wait(0.3)
 
 Info_2.Name = "Info"
 Info_2.Parent = ScreenGui
@@ -421,13 +415,10 @@ Info_2.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 Info_2.Position = UDim2.new(0.147857144, 0, 0.256597191, 0)
 Info_2.Size = UDim2.new(0, 405, 0, 289)
 Info_2.Visible = false
+wait(0.3)
 
 UICorner_13.Parent = Info_2
-
-
-wait(0.7)
-
-
+wait(0.3)
 
 InfoMain.Name = "InfoMain"
 InfoMain.Parent = Info_2
@@ -440,6 +431,7 @@ InfoMain.TextColor3 = Color3.fromRGB(57, 163, 255)
 InfoMain.TextScaled = true
 InfoMain.TextSize = 14.000
 InfoMain.TextWrapped = true
+wait(0.3)
 
 Back_2.Name = "Back"
 Back_2.Parent = Info_2
@@ -453,6 +445,7 @@ Back_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Back_2.TextScaled = true
 Back_2.TextSize = 14.000
 Back_2.TextWrapped = true
+wait(0.3)
 
 infotext.Name = "infotext"
 infotext.Parent = Info_2
@@ -466,6 +459,7 @@ infotext.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext.TextScaled = true
 infotext.TextSize = 14.000
 infotext.TextWrapped = true
+wait(0.3)
 
 infotext_2.Name = "infotext"
 infotext_2.Parent = Info_2
@@ -479,11 +473,7 @@ infotext_2.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_2.TextScaled = true
 infotext_2.TextSize = 14.000
 infotext_2.TextWrapped = true
-
-
-wait(0.6)
-
-
+wait(0.3)
 
 infotext_3.Name = "infotext"
 infotext_3.Parent = Info_2
@@ -497,6 +487,7 @@ infotext_3.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_3.TextScaled = true
 infotext_3.TextSize = 14.000
 infotext_3.TextWrapped = true
+wait(0.3)
 
 infotext_4.Name = "infotext"
 infotext_4.Parent = Info_2
@@ -510,6 +501,7 @@ infotext_4.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_4.TextScaled = true
 infotext_4.TextSize = 14.000
 infotext_4.TextWrapped = true
+wait(0.3)
 
 infotext_5.Name = "infotext"
 infotext_5.Parent = Info_2
@@ -523,8 +515,7 @@ infotext_5.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_5.TextScaled = true
 infotext_5.TextSize = 14.000
 infotext_5.TextWrapped = true
-
-wait(0.5)
+wait(0.3)
 
 
 
@@ -534,6 +525,7 @@ Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Open.BackgroundTransparency = 1.000
 Open.Position = UDim2.new(0.208910897, 0, 0.0212314129, 0)
 Open.Size = UDim2.new(0, 100, 0, 37)
+wait(0.3)
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -550,7 +542,7 @@ Open_2.TextWrapped = true
 
 -- Scripts:
 
-local function IOQDXCE_fake_script() -- PrevPage.LocalScript 
+local function QOPXCCQ_fake_script() -- PrevPage.LocalScript 
 	local script = Instance.new('LocalScript', PrevPage)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -559,8 +551,8 @@ local function IOQDXCE_fake_script() -- PrevPage.LocalScript
 	end)
 	
 end
-coroutine.wrap(IOQDXCE_fake_script)()
-local function OJPZUBB_fake_script() -- Fly.LocalScript 
+coroutine.wrap(QOPXCCQ_fake_script)()
+local function YIRE_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -610,6 +602,8 @@ local function OJPZUBB_fake_script() -- Fly.LocalScript
 	
 		setupTool()
 		-- ========================================
+		wait(0.3)
+
 		-- ========================================
 	
 	
@@ -672,8 +666,8 @@ local function OJPZUBB_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(OJPZUBB_fake_script)()
-local function ZTPAJC_fake_script() -- GC.LocalScript 
+coroutine.wrap(YIRE_fake_script)()
+local function UXCV_fake_script() -- GC.LocalScript 
 	local script = Instance.new('LocalScript', GC)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -893,8 +887,8 @@ local function ZTPAJC_fake_script() -- GC.LocalScript
 	
 	
 end
-coroutine.wrap(ZTPAJC_fake_script)()
-local function BWGT_fake_script() -- ClickTp.LocalScript 
+coroutine.wrap(UXCV_fake_script)()
+local function QJMTH_fake_script() -- ClickTp.LocalScript 
 	local script = Instance.new('LocalScript', ClickTp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -911,8 +905,8 @@ local function BWGT_fake_script() -- ClickTp.LocalScript
 	end)
 	
 end
-coroutine.wrap(BWGT_fake_script)()
-local function IBRACBZ_fake_script() -- InfJumps.LocalScript 
+coroutine.wrap(QJMTH_fake_script)()
+local function FNVJVDW_fake_script() -- InfJumps.LocalScript 
 	local script = Instance.new('LocalScript', InfJumps)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -952,8 +946,8 @@ local function IBRACBZ_fake_script() -- InfJumps.LocalScript
 	end)
 	
 end
-coroutine.wrap(IBRACBZ_fake_script)()
-local function WTJOE_fake_script() -- FA.LocalScript 
+coroutine.wrap(FNVJVDW_fake_script)()
+local function CPFMT_fake_script() -- FA.LocalScript 
 	local script = Instance.new('LocalScript', FA)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -961,8 +955,8 @@ local function WTJOE_fake_script() -- FA.LocalScript
 	end)
 	
 end
-coroutine.wrap(WTJOE_fake_script)()
-local function FHZRTX_fake_script() -- Tutorial.LocalScript 
+coroutine.wrap(CPFMT_fake_script)()
+local function ZEGRA_fake_script() -- Tutorial.LocalScript 
 	local script = Instance.new('LocalScript', Tutorial)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -972,8 +966,8 @@ local function FHZRTX_fake_script() -- Tutorial.LocalScript
 	end)
 	
 end
-coroutine.wrap(FHZRTX_fake_script)()
-local function TJZBTBQ_fake_script() -- BecomLarge.LocalScript 
+coroutine.wrap(ZEGRA_fake_script)()
+local function LTVDZJ_fake_script() -- BecomLarge.LocalScript 
 	local script = Instance.new('LocalScript', BecomLarge)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1032,8 +1026,8 @@ local function TJZBTBQ_fake_script() -- BecomLarge.LocalScript
 	end)
 	
 end
-coroutine.wrap(TJZBTBQ_fake_script)()
-local function HXVZ_fake_script() -- Info.LocalScript 
+coroutine.wrap(LTVDZJ_fake_script)()
+local function BPYYDLO_fake_script() -- Info.LocalScript 
 	local script = Instance.new('LocalScript', Info)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1043,8 +1037,8 @@ local function HXVZ_fake_script() -- Info.LocalScript
 	end)
 	
 end
-coroutine.wrap(HXVZ_fake_script)()
-local function UPKPMC_fake_script() -- XButton.LocalScript 
+coroutine.wrap(BPYYDLO_fake_script)()
+local function ILPM_fake_script() -- XButton.LocalScript 
 	local script = Instance.new('LocalScript', XButton)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1058,8 +1052,8 @@ local function UPKPMC_fake_script() -- XButton.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(UPKPMC_fake_script)()
-local function DLADIS_fake_script() -- NextPage.LocalScript 
+coroutine.wrap(ILPM_fake_script)()
+local function TYCMQ_fake_script() -- NextPage.LocalScript 
 	local script = Instance.new('LocalScript', NextPage)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1069,8 +1063,8 @@ local function DLADIS_fake_script() -- NextPage.LocalScript
 		
 		
 end
-coroutine.wrap(DLADIS_fake_script)()
-local function KCZKRLK_fake_script() -- XButton_2.LocalScript 
+coroutine.wrap(TYCMQ_fake_script)()
+local function SJOJWO_fake_script() -- XButton_2.LocalScript 
 	local script = Instance.new('LocalScript', XButton_2)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1084,8 +1078,8 @@ local function KCZKRLK_fake_script() -- XButton_2.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(KCZKRLK_fake_script)()
-local function XWOJWMX_fake_script() -- Back.LocalScript 
+coroutine.wrap(SJOJWO_fake_script)()
+local function GHJKIGZ_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1098,8 +1092,8 @@ local function XWOJWMX_fake_script() -- Back.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(XWOJWMX_fake_script)()
-local function FOPFJFI_fake_script() -- Back_2.LocalScript 
+coroutine.wrap(GHJKIGZ_fake_script)()
+local function JDYJOH_fake_script() -- Back_2.LocalScript 
 	local script = Instance.new('LocalScript', Back_2)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1112,8 +1106,8 @@ local function FOPFJFI_fake_script() -- Back_2.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(FOPFJFI_fake_script)()
-local function KMTOND_fake_script() -- Open_2.LocalScript 
+coroutine.wrap(JDYJOH_fake_script)()
+local function WCCWDLO_fake_script() -- Open_2.LocalScript 
 	local script = Instance.new('LocalScript', Open_2)
 
 	
@@ -1130,8 +1124,7 @@ local function KMTOND_fake_script() -- Open_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(KMTOND_fake_script)()
-
+coroutine.wrap(WCCWDLO_fake_script)()
 AnouncmentText.Text = "Loaded!"
-wait(0.4)
+wait(3)
 AnouncmentText.Text = " "
