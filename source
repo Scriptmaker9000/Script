@@ -1336,6 +1336,7 @@ local function MPAROWW_fake_script() -- Lock.LocalScript
 	end)
 	
 end
+
 coroutine.wrap(MPAROWW_fake_script)()
 local function YAJWVZT_fake_script() -- XButton.LocalScript 
 	local script = Instance.new('LocalScript', XButton)
@@ -1426,3 +1427,5 @@ end
 coroutine.wrap(BAZFV_fake_script)()
 
 AnouncmentText.Text = "Loaded!"
+koms(3)
+AnouncmentText.Text = "Announcments will apear here!"
