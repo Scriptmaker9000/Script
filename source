@@ -93,7 +93,7 @@ AnouncmentText.Text = "Loading Please wait!"
 
 
 Gui.Name = "Gui"
-Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.Parent = game.CoreGui
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 koms(10)
@@ -169,6 +169,9 @@ Fly.TextSize = 14.000
 Fly.TextWrapped = true
 
 UICorner_3.Parent = Fly
+
+
+
 
 GC.Name = "GC"
 GC.Parent = Buttons
@@ -1336,7 +1339,6 @@ local function MPAROWW_fake_script() -- Lock.LocalScript
 	end)
 	
 end
-
 coroutine.wrap(MPAROWW_fake_script)()
 local function YAJWVZT_fake_script() -- XButton.LocalScript 
 	local script = Instance.new('LocalScript', XButton)
@@ -1427,5 +1429,5 @@ end
 coroutine.wrap(BAZFV_fake_script)()
 
 AnouncmentText.Text = "Loaded!"
-koms(3)
-AnouncmentText.Text = "Announcments will apear here!"
+wait(3)
+AnnouncmentText.Text = "Update: New Lock Button, Info button and a large button!"
