@@ -95,6 +95,8 @@ AnouncmentText.Text = "Loading Please wait!"
 Gui.Name = "Gui"
 Gui.Parent = game.CoreGui
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+
 
 koms(10)
 
@@ -1430,4 +1432,6 @@ coroutine.wrap(BAZFV_fake_script)()
 
 AnouncmentText.Text = "Loaded!"
 wait(3)
-AnnouncmentText.Text = "Update: New Lock Button, Info button and a large button!"
+AnouncmentText.Text = "Update: New Lock Button, Info button and a large button!"
+wait(10)
+AnouncmentText.Text = " "
