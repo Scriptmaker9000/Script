@@ -1,10 +1,9 @@
--- Version 0.1
+-- Version 0.2
 -- Link for Updates(Copy)
 --https://raw.githubusercontent.com/Scriptmaker9000/Script/main/source
 
-
-
-local ScreenGui = Instance.new("ScreenGui")
+local koms = wait
+local Gui = Instance.new("ScreenGui")
 local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local MainFrame = Instance.new("Frame")
@@ -29,22 +28,24 @@ local BecomLarge = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local Info = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local Lock = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
 local XButton = Instance.new("TextButton")
 local Page2Frame = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Conatct_2 = Instance.new("TextLabel")
 local NextPage = Instance.new("TextButton")
 local Main_2 = Instance.new("TextLabel")
 local XButton_2 = Instance.new("TextButton")
 local Tutorial_2 = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local Main_3 = Instance.new("TextLabel")
 local Back = Instance.new("TextButton")
 local Texts = Instance.new("Folder")
 local ImageLabel = Instance.new("ImageLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local Info_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local InfoMain = Instance.new("TextLabel")
 local Back_2 = Instance.new("TextButton")
 local infotext = Instance.new("TextLabel")
@@ -52,19 +53,15 @@ local infotext_2 = Instance.new("TextLabel")
 local infotext_3 = Instance.new("TextLabel")
 local infotext_4 = Instance.new("TextLabel")
 local infotext_5 = Instance.new("TextLabel")
-local Announcment = Instance.new("Frame")
-local AnouncmentText = Instance.new("TextLabel")
 local Open = Instance.new("Frame")
 local Open_2 = Instance.new("TextButton")
-
---Properties:
-
-
+local Announcment = Instance.new("Frame")
+local AnouncmentText = Instance.new("TextLabel")
 
 
 
 Announcment.Name = "Announcment"
-Announcment.Parent = ScreenGui
+Announcment.Parent = Gui
 Announcment.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 Announcment.BackgroundTransparency = 0.200
 Announcment.BorderColor3 = Color3.fromRGB(27, 42, 53)
@@ -84,19 +81,26 @@ AnouncmentText.TextScaled = true
 AnouncmentText.TextSize = 14.000
 AnouncmentText.TextWrapped = true
 
-AnouncmentText.Text = "Loading, Please wait!"
+
+
+
+
+AnouncmentText.Text = "Loading Please wait!"
 
 
 
 
 
 
+Gui.Name = "Gui"
+Gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+koms(10)
+
 
 BackgroundFrame.Name = "BackgroundFrame"
-BackgroundFrame.Parent = ScreenGui
+BackgroundFrame.Parent = Gui
 BackgroundFrame.BackgroundColor3 = Color3.fromRGB(128, 0, 128)
 BackgroundFrame.Position = UDim2.new(0.133542702, 0, 0.238254458, 0)
 BackgroundFrame.Size = UDim2.new(0, 432, 0, 307)
@@ -104,14 +108,12 @@ BackgroundFrame.Size = UDim2.new(0, 432, 0, 307)
 UICorner.Parent = BackgroundFrame
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
+MainFrame.Parent = Gui
 MainFrame.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 MainFrame.Position = UDim2.new(0.149695411, 0, 0.259212554, 0)
 MainFrame.Size = UDim2.new(0, 405, 0, 289)
 
 UICorner_2.Parent = MainFrame
-
-wait(0.3)
 
 Main.Name = "Main"
 Main.Parent = MainFrame
@@ -136,8 +138,6 @@ Conatct.Text = "dm 3mro#2373 for help!"
 Conatct.TextColor3 = Color3.fromRGB(57, 163, 255)
 Conatct.TextSize = 14.000
 Conatct.TextWrapped = true
-wait(0.3)
-
 
 PrevPage.Name = "PrevPage"
 PrevPage.Parent = MainFrame
@@ -152,7 +152,6 @@ PrevPage.TextColor3 = Color3.fromRGB(254, 114, 128)
 PrevPage.TextScaled = true
 PrevPage.TextSize = 14.000
 PrevPage.TextWrapped = true
-wait(0.3)
 
 Buttons.Name = "Buttons"
 Buttons.Parent = MainFrame
@@ -168,7 +167,6 @@ Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
 Fly.TextWrapped = true
-wait(0.3)
 
 UICorner_3.Parent = Fly
 
@@ -197,7 +195,6 @@ ClickTp.TextColor3 = Color3.fromRGB(0, 0, 0)
 ClickTp.TextScaled = true
 ClickTp.TextSize = 14.000
 ClickTp.TextWrapped = true
-wait(0.3)
 
 UICorner_5.Parent = ClickTp
 
@@ -214,7 +211,6 @@ InfJumps.TextSize = 14.000
 InfJumps.TextWrapped = true
 
 UICorner_6.Parent = InfJumps
-wait(0.3)
 
 FA.Name = "FA"
 FA.Parent = Buttons
@@ -229,7 +225,6 @@ FA.TextSize = 14.000
 FA.TextWrapped = true
 
 UICorner_7.Parent = FA
-wait(0.3)
 
 Tutorial.Name = "Tutorial"
 Tutorial.Parent = Buttons
@@ -258,7 +253,6 @@ BecomLarge.TextSize = 14.000
 BecomLarge.TextWrapped = true
 
 UICorner_9.Parent = BecomLarge
-wait(0.3)
 
 Info.Name = "Info"
 Info.Parent = Buttons
@@ -273,7 +267,20 @@ Info.TextSize = 14.000
 Info.TextWrapped = true
 
 UICorner_10.Parent = Info
-wait(0.3)
+
+Lock.Name = "Lock"
+Lock.Parent = Buttons
+Lock.BackgroundColor3 = Color3.fromRGB(207, 61, 255)
+Lock.Position = UDim2.new(0.545678973, 0, 0.474048495, 0)
+Lock.Size = UDim2.new(0, 71, 0, 50)
+Lock.Font = Enum.Font.PatrickHand
+Lock.Text = "Lock (Many Game support)"
+Lock.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lock.TextScaled = true
+Lock.TextSize = 14.000
+Lock.TextWrapped = true
+
+UICorner_11.Parent = Lock
 
 XButton.Name = "XButton"
 XButton.Parent = MainFrame
@@ -289,13 +296,13 @@ XButton.TextSize = 14.000
 XButton.TextWrapped = true
 
 Page2Frame.Name = "Page2Frame"
-Page2Frame.Parent = ScreenGui
+Page2Frame.Parent = Gui
 Page2Frame.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 Page2Frame.Position = UDim2.new(0.149695411, 0, 0.264083296, 0)
 Page2Frame.Size = UDim2.new(0, 405, 0, 287)
 Page2Frame.Visible = false
 
-UICorner_11.Parent = Page2Frame
+UICorner_12.Parent = Page2Frame
 
 Conatct_2.Name = "Conatct"
 Conatct_2.Parent = Page2Frame
@@ -308,7 +315,6 @@ Conatct_2.Text = "dm 3mro#2373 for help!"
 Conatct_2.TextColor3 = Color3.fromRGB(57, 163, 255)
 Conatct_2.TextSize = 14.000
 Conatct_2.TextWrapped = true
-wait(0.3)
 
 NextPage.Name = "NextPage"
 NextPage.Parent = Page2Frame
@@ -323,7 +329,6 @@ NextPage.TextColor3 = Color3.fromRGB(254, 114, 128)
 NextPage.TextScaled = true
 NextPage.TextSize = 14.000
 NextPage.TextWrapped = true
-wait(0.3)
 
 Main_2.Name = "Main"
 Main_2.Parent = Page2Frame
@@ -337,7 +342,6 @@ Main_2.TextColor3 = Color3.fromRGB(57, 163, 255)
 Main_2.TextScaled = true
 Main_2.TextSize = 14.000
 Main_2.TextWrapped = true
-wait(0.3)
 
 XButton_2.Name = "XButton"
 XButton_2.Parent = Page2Frame
@@ -351,18 +355,15 @@ XButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 XButton_2.TextScaled = true
 XButton_2.TextSize = 14.000
 XButton_2.TextWrapped = true
-wait(0.3)
 
 Tutorial_2.Name = "Tutorial"
-Tutorial_2.Parent = ScreenGui
+Tutorial_2.Parent = Gui
 Tutorial_2.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 Tutorial_2.Position = UDim2.new(0.147857144, 0, 0.256597191, 0)
 Tutorial_2.Size = UDim2.new(0, 405, 0, 289)
 Tutorial_2.Visible = false
-wait(0.3)
 
-UICorner_12.Parent = Tutorial_2
-wait(0.3)
+UICorner_13.Parent = Tutorial_2
 
 Main_3.Name = "Main"
 Main_3.Parent = Tutorial_2
@@ -375,7 +376,6 @@ Main_3.TextColor3 = Color3.fromRGB(57, 163, 255)
 Main_3.TextScaled = true
 Main_3.TextSize = 14.000
 Main_3.TextWrapped = true
-wait(0.3)
 
 Back.Name = "Back"
 Back.Parent = Tutorial_2
@@ -389,36 +389,30 @@ Back.TextColor3 = Color3.fromRGB(0, 0, 0)
 Back.TextScaled = true
 Back.TextSize = 14.000
 Back.TextWrapped = true
-wait(0.3)
 
 Texts.Name = "Texts"
 Texts.Parent = Tutorial_2
-wait(0.3)
 
 ImageLabel.Parent = Texts
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(0.128395066, 0, 0.148788929, 0)
 ImageLabel.Size = UDim2.new(0, 312, 0, 172)
 ImageLabel.Image = "rbxassetid://10637102748"
-wait(0.3)
 
 ImageLabel_2.Parent = Texts
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel_2.Position = UDim2.new(0.0395061746, 0, 0.768007457, 0)
 ImageLabel_2.Size = UDim2.new(0, 150, 0, 54)
 ImageLabel_2.Image = "rbxassetid://10637110635"
-wait(0.3)
 
 Info_2.Name = "Info"
-Info_2.Parent = ScreenGui
+Info_2.Parent = Gui
 Info_2.BackgroundColor3 = Color3.fromRGB(255, 120, 224)
 Info_2.Position = UDim2.new(0.147857144, 0, 0.256597191, 0)
 Info_2.Size = UDim2.new(0, 405, 0, 289)
 Info_2.Visible = false
-wait(0.3)
 
-UICorner_13.Parent = Info_2
-wait(0.3)
+UICorner_14.Parent = Info_2
 
 InfoMain.Name = "InfoMain"
 InfoMain.Parent = Info_2
@@ -431,7 +425,6 @@ InfoMain.TextColor3 = Color3.fromRGB(57, 163, 255)
 InfoMain.TextScaled = true
 InfoMain.TextSize = 14.000
 InfoMain.TextWrapped = true
-wait(0.3)
 
 Back_2.Name = "Back"
 Back_2.Parent = Info_2
@@ -445,7 +438,6 @@ Back_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Back_2.TextScaled = true
 Back_2.TextSize = 14.000
 Back_2.TextWrapped = true
-wait(0.3)
 
 infotext.Name = "infotext"
 infotext.Parent = Info_2
@@ -459,7 +451,6 @@ infotext.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext.TextScaled = true
 infotext.TextSize = 14.000
 infotext.TextWrapped = true
-wait(0.3)
 
 infotext_2.Name = "infotext"
 infotext_2.Parent = Info_2
@@ -473,7 +464,6 @@ infotext_2.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_2.TextScaled = true
 infotext_2.TextSize = 14.000
 infotext_2.TextWrapped = true
-wait(0.3)
 
 infotext_3.Name = "infotext"
 infotext_3.Parent = Info_2
@@ -487,7 +477,6 @@ infotext_3.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_3.TextScaled = true
 infotext_3.TextSize = 14.000
 infotext_3.TextWrapped = true
-wait(0.3)
 
 infotext_4.Name = "infotext"
 infotext_4.Parent = Info_2
@@ -501,7 +490,6 @@ infotext_4.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_4.TextScaled = true
 infotext_4.TextSize = 14.000
 infotext_4.TextWrapped = true
-wait(0.3)
 
 infotext_5.Name = "infotext"
 infotext_5.Parent = Info_2
@@ -515,17 +503,13 @@ infotext_5.TextColor3 = Color3.fromRGB(60, 255, 89)
 infotext_5.TextScaled = true
 infotext_5.TextSize = 14.000
 infotext_5.TextWrapped = true
-wait(0.3)
-
-
 
 Open.Name = "Open"
-Open.Parent = ScreenGui
+Open.Parent = Gui
 Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Open.BackgroundTransparency = 1.000
 Open.Position = UDim2.new(0.208910897, 0, 0.0212314129, 0)
 Open.Size = UDim2.new(0, 100, 0, 37)
-wait(0.3)
 
 Open_2.Name = "Open"
 Open_2.Parent = Open
@@ -540,9 +524,30 @@ Open_2.TextScaled = true
 Open_2.TextSize = 14.000
 Open_2.TextWrapped = true
 
+Announcment.Name = "Announcment"
+Announcment.Parent = Gui
+Announcment.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Announcment.BackgroundTransparency = 0.200
+Announcment.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Announcment.Position = UDim2.new(-0.000234065577, 0, 0.887935936, 0)
+Announcment.Size = UDim2.new(0, 146, 0, 52)
+
+AnouncmentText.Name = "AnouncmentText"
+AnouncmentText.Parent = Announcment
+AnouncmentText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnouncmentText.BackgroundTransparency = 1.000
+AnouncmentText.Position = UDim2.new(-0.00436991453, 0, 0.0173077583, 0)
+AnouncmentText.Size = UDim2.new(0, 146, 0, 52)
+AnouncmentText.Font = Enum.Font.PatrickHand
+AnouncmentText.Text = " "
+AnouncmentText.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnouncmentText.TextScaled = true
+AnouncmentText.TextSize = 14.000
+AnouncmentText.TextWrapped = true
+
 -- Scripts:
 
-local function QOPXCCQ_fake_script() -- PrevPage.LocalScript 
+local function OIJRF_fake_script() -- PrevPage.LocalScript 
 	local script = Instance.new('LocalScript', PrevPage)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -551,8 +556,8 @@ local function QOPXCCQ_fake_script() -- PrevPage.LocalScript
 	end)
 	
 end
-coroutine.wrap(QOPXCCQ_fake_script)()
-local function YIRE_fake_script() -- Fly.LocalScript 
+coroutine.wrap(OIJRF_fake_script)()
+local function ADDWU_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -602,8 +607,6 @@ local function YIRE_fake_script() -- Fly.LocalScript
 	
 		setupTool()
 		-- ========================================
-		wait(0.3)
-
 		-- ========================================
 	
 	
@@ -666,8 +669,8 @@ local function YIRE_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(YIRE_fake_script)()
-local function UXCV_fake_script() -- GC.LocalScript 
+coroutine.wrap(ADDWU_fake_script)()
+local function DLOU_fake_script() -- GC.LocalScript 
 	local script = Instance.new('LocalScript', GC)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -887,8 +890,8 @@ local function UXCV_fake_script() -- GC.LocalScript
 	
 	
 end
-coroutine.wrap(UXCV_fake_script)()
-local function QJMTH_fake_script() -- ClickTp.LocalScript 
+coroutine.wrap(DLOU_fake_script)()
+local function MYLZTB_fake_script() -- ClickTp.LocalScript 
 	local script = Instance.new('LocalScript', ClickTp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -905,8 +908,8 @@ local function QJMTH_fake_script() -- ClickTp.LocalScript
 	end)
 	
 end
-coroutine.wrap(QJMTH_fake_script)()
-local function FNVJVDW_fake_script() -- InfJumps.LocalScript 
+coroutine.wrap(MYLZTB_fake_script)()
+local function CTJAQ_fake_script() -- InfJumps.LocalScript 
 	local script = Instance.new('LocalScript', InfJumps)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -946,8 +949,8 @@ local function FNVJVDW_fake_script() -- InfJumps.LocalScript
 	end)
 	
 end
-coroutine.wrap(FNVJVDW_fake_script)()
-local function CPFMT_fake_script() -- FA.LocalScript 
+coroutine.wrap(CTJAQ_fake_script)()
+local function HDVBOFD_fake_script() -- FA.LocalScript 
 	local script = Instance.new('LocalScript', FA)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -955,8 +958,8 @@ local function CPFMT_fake_script() -- FA.LocalScript
 	end)
 	
 end
-coroutine.wrap(CPFMT_fake_script)()
-local function ZEGRA_fake_script() -- Tutorial.LocalScript 
+coroutine.wrap(HDVBOFD_fake_script)()
+local function SZZDOYN_fake_script() -- Tutorial.LocalScript 
 	local script = Instance.new('LocalScript', Tutorial)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -966,8 +969,8 @@ local function ZEGRA_fake_script() -- Tutorial.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZEGRA_fake_script)()
-local function LTVDZJ_fake_script() -- BecomLarge.LocalScript 
+coroutine.wrap(SZZDOYN_fake_script)()
+local function VNZHELU_fake_script() -- BecomLarge.LocalScript 
 	local script = Instance.new('LocalScript', BecomLarge)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1026,8 +1029,8 @@ local function LTVDZJ_fake_script() -- BecomLarge.LocalScript
 	end)
 	
 end
-coroutine.wrap(LTVDZJ_fake_script)()
-local function BPYYDLO_fake_script() -- Info.LocalScript 
+coroutine.wrap(VNZHELU_fake_script)()
+local function SWNBMAI_fake_script() -- Info.LocalScript 
 	local script = Instance.new('LocalScript', Info)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1037,8 +1040,304 @@ local function BPYYDLO_fake_script() -- Info.LocalScript
 	end)
 	
 end
-coroutine.wrap(BPYYDLO_fake_script)()
-local function ILPM_fake_script() -- XButton.LocalScript 
+coroutine.wrap(SWNBMAI_fake_script)()
+local function MPAROWW_fake_script() -- Lock.LocalScript 
+	local script = Instance.new('LocalScript', Lock)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Settings = {
+			rewrittenmain = {
+				Enabled = true,
+				Key = "q",
+				DOT = true,
+				AIRSHOT = true,
+				NOTIF = true,
+				AUTOPRED = false,
+				FOV = math.huge,
+				RESOVLER = false
+			}
+		}
+	
+		local SelectedPart = "HumanoidRootPart"
+		local Prediction = true
+		local PredictionValue = 0.146
+	
+	
+		local AnchorCount = 0
+		local MaxAnchor = 50
+	
+		local CC = game:GetService"Workspace".CurrentCamera
+		local Plr;
+		local enabled = false
+		local accomidationfactor = 0.139
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local placemarker = Instance.new("Part", game.Workspace)
+	
+		function makemarker(Parent, Adornee, Color, Size, Size2)
+			local e = Instance.new("BillboardGui", Parent)
+			e.Name = "PP"
+			e.Adornee = Adornee
+			e.Size = UDim2.new(Size, Size2, Size, Size2)
+			e.AlwaysOnTop = Settings.rewrittenmain.DOT
+			local a = Instance.new("Frame", e)
+			if Settings.rewrittenmain.DOT == true then
+				a.Size = UDim2.new(1, 0, 1, 0)
+			else
+				a.Size = UDim2.new(0, 0, 0, 0)
+			end
+			if Settings.rewrittenmain.DOT == true then
+				a.Transparency = 0
+				a.BackgroundTransparency = 0
+			else
+				a.Transparency = 1
+				a.BackgroundTransparency = 1
+			end
+			a.BackgroundColor3 = Color
+			local g = Instance.new("UICorner", a)
+			if Settings.rewrittenmain.DOT == false then
+				g.CornerRadius = UDim.new(0, 0)
+			else
+				g.CornerRadius = UDim.new(1, 1) 
+			end
+			return(e)
+		end
+	
+	
+		local data = game.Players:GetPlayers()
+		function noob(player)
+			local character
+			repeat wait() until player.Character
+			local handler = makemarker(guimain, player.Character:WaitForChild(SelectedPart), Color3.fromRGB(107, 184, 255), 0.3, 3)
+			handler.Name = player.Name
+			player.CharacterAdded:connect(function(Char) handler.Adornee = Char:WaitForChild(SelectedPart) end)
+	
+	
+			spawn(function()
+				while wait() do
+					if player.Character then
+					end
+				end
+			end)
+		end
+	
+		for i = 1, #data do
+			if data[i] ~= game.Players.LocalPlayer then
+				noob(data[i])
+			end
+		end
+	
+		game.Players.PlayerAdded:connect(function(Player)
+			noob(Player)
+		end)
+	
+		spawn(function()
+			placemarker.Anchored = true
+			placemarker.CanCollide = false
+			if Settings.rewrittenmain.DOT == true then
+				placemarker.Size = Vector3.new(8, 8, 8)
+			else
+				placemarker.Size = Vector3.new(0, 0, 0)
+			end
+			placemarker.Transparency = 0.75
+			if Settings.rewrittenmain.DOT then
+				makemarker(placemarker, placemarker, Color3.fromRGB(232, 186, 200), 0.40, 0)
+			end
+		end)
+	
+		game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(k)
+			if k == Settings.rewrittenmain.Key and Settings.rewrittenmain.Enabled then
+				if enabled == true then
+					enabled = false
+					if Settings.rewrittenmain.NOTIF == true then
+						Plr = getClosestPlayerToCursor()
+						game.StarterGui:SetCore("SendNotification", {
+							Title = "";
+							Text = "Unlocked :)",
+							Duration = 5
+						})
+					end
+				else
+					Plr = getClosestPlayerToCursor()
+					enabled = true
+					if Settings.rewrittenmain.NOTIF == true then
+	
+						game.StarterGui:SetCore("SendNotification", {
+							Title = "";
+							Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName),
+							Duration = 5
+						})
+	
+					end
+				end
+			end
+		end)
+	
+	
+	
+		function getClosestPlayerToCursor()
+			local closestPlayer
+			local shortestDistance = Settings.rewrittenmain.FOV
+	
+			for i, v in pairs(game.Players:GetPlayers()) do
+				if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") then
+					local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+					local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+					if magnitude < shortestDistance then
+						closestPlayer = v
+						shortestDistance = magnitude
+					end
+				end
+			end
+			return closestPlayer
+		end
+	
+		local pingvalue = nil;
+		local split = nil;
+		local ping = nil;
+	
+		game:GetService"RunService".Stepped:connect(function()
+			if enabled and Plr.Character ~= nil and Plr.Character:FindFirstChild("HumanoidRootPart") then
+				placemarker.CFrame = CFrame.new(Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor))
+			else
+				placemarker.CFrame = CFrame.new(0, 9999, 0)
+			end
+			if Settings.rewrittenmain.AUTOPRED == true then
+				pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+				split = string.split(pingvalue,'(')
+				ping = tonumber(split[1])
+				if ping < 130 then
+					PredictionValue = 0.151
+				elseif ping < 125 then
+					PredictionValue = 0.149
+				elseif ping < 110 then
+					PredictionValue = 0.146
+				elseif ping < 105 then
+					PredictionValue = 0.138
+				elseif ping < 90 then
+					PredictionValue = 0.136
+				elseif ping < 80 then
+					PredictionValue = 0.134
+				elseif ping < 70 then
+					PredictionValue = 0.131
+				elseif ping < 60 then
+					PredictionValue = 0.1229
+				elseif ping < 50 then
+					PredictionValue = 0.1225
+				elseif ping < 40 then
+					PredictionValue = 0.1256
+				end
+			end
+		end)
+	
+		local mt = getrawmetatable(game)
+		local old = mt.__namecall
+		setreadonly(mt, false)
+		mt.__namecall = newcclosure(function(...)
+			local args = {...}
+			if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" and Settings.rewrittenmain.Enabled and Plr.Character ~= nil then
+	
+				-- args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*accomidationfactor)
+	            --[[
+	            if Settings.rewrittenmain.AIRSHOT == true then
+	                if game.Workspace.Players[Plr.Name].Humanoid:GetState() == Enum.HumanoidStateType.Freefall then -- Plr.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Freefall
+	 
+	                    --// Airshot
+	                    args[3] = Plr.Character.LeftFoot.Position+(Plr.Character.LeftFoot.Velocity*PredictionValue)
+	 
+	                else
+	                    args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*PredictionValue)
+	 
+	                end
+	            else
+	                    args[3] = Plr.Character.HumanoidRootPart.Position+(Plr.Character.HumanoidRootPart.Velocity*PredictionValue)
+	            end
+	            ]]
+				if Prediction == true then
+	
+					args[3] = Plr.Character[SelectedPart].Position+(Plr.Character[SelectedPart].Velocity*PredictionValue)
+	
+				else
+	
+					args[3] = Plr.Character[SelectedPart].Position
+	
+				end
+	
+				return old(unpack(args))
+			end
+			return old(...)
+		end)
+	
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if Settings.rewrittenmain.RESOVLER == true and Plr.Character ~= nil and enabled and Settings.rewrittenmain.Enabled then
+				if Settings.rewrittenmain.AIRSHOT == true and enabled and Plr.Character ~= nil then
+	
+					if game.Workspace.Players[Plr.Name].Humanoid:GetState() == Enum.HumanoidStateType.Freefall then -- Plr.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Freefall
+	
+						--// Airshot
+	
+						--// Anchor Check
+	
+						if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+							AnchorCount = AnchorCount + 1
+							if AnchorCount >= MaxAnchor then
+								Prediction = false
+								wait(2)
+								AnchorCount = 0;
+							end
+						else
+							Prediction = true
+							AnchorCount = 0;
+						end
+	
+						SelectedPart = "LeftFoot"
+	
+					else
+						--// Anchor Check
+	
+						if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+							AnchorCount = AnchorCount + 1
+							if AnchorCount >= MaxAnchor then
+								Prediction = false
+								wait(2)
+								AnchorCount = 0;
+							end
+						else
+							Prediction = true
+							AnchorCount = 0;
+						end
+	
+						SelectedPart = "HumanoidRootPart"
+	
+					end
+				else
+	
+					--// Anchor Check
+	
+					if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
+						AnchorCount = AnchorCount + 1
+						if AnchorCount >= MaxAnchor then
+							Prediction = false
+							wait(2)
+							AnchorCount = 0;
+						end
+					else
+						Prediction = true
+						AnchorCount = 0;
+					end
+	
+					SelectedPart = "HumanoidRootPart"
+				end
+	
+			else
+				SelectedPart = "HumanoidRootPart"
+			end
+		end)
+	
+	end)
+	
+end
+coroutine.wrap(MPAROWW_fake_script)()
+local function YAJWVZT_fake_script() -- XButton.LocalScript 
 	local script = Instance.new('LocalScript', XButton)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1052,8 +1351,8 @@ local function ILPM_fake_script() -- XButton.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(ILPM_fake_script)()
-local function TYCMQ_fake_script() -- NextPage.LocalScript 
+coroutine.wrap(YAJWVZT_fake_script)()
+local function XKLSXFA_fake_script() -- NextPage.LocalScript 
 	local script = Instance.new('LocalScript', NextPage)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1063,8 +1362,8 @@ local function TYCMQ_fake_script() -- NextPage.LocalScript
 		
 		
 end
-coroutine.wrap(TYCMQ_fake_script)()
-local function SJOJWO_fake_script() -- XButton_2.LocalScript 
+coroutine.wrap(XKLSXFA_fake_script)()
+local function WEATLE_fake_script() -- XButton_2.LocalScript 
 	local script = Instance.new('LocalScript', XButton_2)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1078,8 +1377,8 @@ local function SJOJWO_fake_script() -- XButton_2.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(SJOJWO_fake_script)()
-local function GHJKIGZ_fake_script() -- Back.LocalScript 
+coroutine.wrap(WEATLE_fake_script)()
+local function VAJUV_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1092,8 +1391,8 @@ local function GHJKIGZ_fake_script() -- Back.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(GHJKIGZ_fake_script)()
-local function JDYJOH_fake_script() -- Back_2.LocalScript 
+coroutine.wrap(VAJUV_fake_script)()
+local function ALQUGFD_fake_script() -- Back_2.LocalScript 
 	local script = Instance.new('LocalScript', Back_2)
 
 	local WAIT_TIME = 0.2 --Time Until They Can Close It.
@@ -1106,8 +1405,8 @@ local function JDYJOH_fake_script() -- Back_2.LocalScript
 	end)
 	--Aways_YT--
 end
-coroutine.wrap(JDYJOH_fake_script)()
-local function WCCWDLO_fake_script() -- Open_2.LocalScript 
+coroutine.wrap(ALQUGFD_fake_script)()
+local function BAZFV_fake_script() -- Open_2.LocalScript 
 	local script = Instance.new('LocalScript', Open_2)
 
 	
@@ -1124,7 +1423,6 @@ local function WCCWDLO_fake_script() -- Open_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(WCCWDLO_fake_script)()
+coroutine.wrap(BAZFV_fake_script)()
+
 AnouncmentText.Text = "Loaded!"
-wait(3)
-AnouncmentText.Text = " "
