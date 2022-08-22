@@ -84,19 +84,18 @@ AnouncmentText.TextSize = 14.000
 AnouncmentText.TextWrapped = true
 
 
+AnouncmentText.Text = "Loading Please wait!"
 
 
-
-AnouncmentText.Text = "Loading please wait!"
-
-
-koms(10)
 
 --Properties:
 
 Gui.Name = "Gui"
 Gui.Parent = game.CoreGui
 Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+koms(10)
+
 
 BackgroundFrame.Name = "BackgroundFrame"
 BackgroundFrame.Parent = Gui
