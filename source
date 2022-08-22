@@ -58,7 +58,6 @@ local Open = Instance.new("Frame")
 local Open_2 = Instance.new("TextButton")
 local Announcment = Instance.new("Frame")
 local AnouncmentText = Instance.new("TextLabel")
-local text = AnouncmentText.Text
 
 
 
@@ -88,7 +87,7 @@ AnouncmentText.TextWrapped = true
 
 
 
-text = "Loading please wait!"
+AnouncmentText.Text = "Loading please wait!"
 
 
 koms(10)
@@ -524,26 +523,6 @@ Open_2.TextScaled = true
 Open_2.TextSize = 14.000
 Open_2.TextWrapped = true
 
-Announcment.Name = "Announcment"
-Announcment.Parent = Gui
-Announcment.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-Announcment.BackgroundTransparency = 0.200
-Announcment.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Announcment.Position = UDim2.new(-0.000234065577, 0, 0.887935936, 0)
-Announcment.Size = UDim2.new(0, 146, 0, 52)
-
-AnouncmentText.Name = "AnouncmentText"
-AnouncmentText.Parent = Announcment
-AnouncmentText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AnouncmentText.BackgroundTransparency = 1.000
-AnouncmentText.Position = UDim2.new(-0.00436991453, 0, 0.0173077583, 0)
-AnouncmentText.Size = UDim2.new(0, 146, 0, 52)
-AnouncmentText.Font = Enum.Font.PatrickHand
-AnouncmentText.Text = " "
-AnouncmentText.TextColor3 = Color3.fromRGB(0, 0, 0)
-AnouncmentText.TextScaled = true
-AnouncmentText.TextSize = 14.000
-AnouncmentText.TextWrapped = true
 
 -- Scripts:
 
@@ -1168,15 +1147,14 @@ coroutine.wrap(OWSKT_fake_script)()
 local function BQRPKQT_fake_script() -- Back_2.LocalScript 
 	local script = Instance.new('LocalScript', Back_2)
 
-	local WAIT_TIME = 0.2 --Time Until They Can Close It.
-	--Dont Touch Below Unless You Know What Your Doing.
+	local WAIT_TIME = 0.2 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Visible = false
 		script.Parent.Parent.Visible = false
 		script.Parent.Parent.Parent.Parent.MainFrame.Visible = true
 		wait(WAIT_TIME)
 	end)
-	
+
 end
 coroutine.wrap(BQRPKQT_fake_script)()
 local function XSDHUM_fake_script() -- Open_2.LocalScript 
@@ -1198,12 +1176,10 @@ local function XSDHUM_fake_script() -- Open_2.LocalScript
 end
 coroutine.wrap(XSDHUM_fake_script)()
 
-text = "Loaded!"
+AnouncmentText.Text = "Loaded!"
 koms(3)
-text = "Made by 3mro#2373"
+AnouncmentText.Text = "Update:  Replaced lock with ball"
 koms(3)
-text = "Update:  Replaced lock with ball"
-koms(3)
-text = "If you're gonna post this on yt, please give credit to me"
-koms(3)
-text = " "
+AnouncmentText.Text = "Made by 3mro#2373 (Tix Blox, Roblox Scripts)"
+koms(50)
+AnouncmentText.Text = " "
